@@ -95,6 +95,7 @@ def run_game_rounds(categories):
     # Add your code here
     #------------------------
     
+
     raise NotImplementedError("This function is not implemented yet.")
     #------------------------
 
@@ -197,7 +198,7 @@ def restart_or_exit():
     #------------------------
     # Add your code here
     #------------------------
-    if check_game_over()
+    
     raise NotImplementedError("This function is not implemented yet.")
     #------------------------
 

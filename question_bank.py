@@ -4,7 +4,7 @@
 #---------------------------------------
 
 import random
-
+import game_mechanics
 # Simplified example with one category. Expand as needed.
 questions = {
     "Science": [
@@ -70,6 +70,7 @@ def check_answer(player_answer, correct_answer):
     #------------------------
     # Add your code here
     #------------------------
+    return player_answer.lower() == correct_answer.lower()
     raise NotImplementedError("This function is not implemented yet.")
     #------------------------
 
@@ -89,6 +90,9 @@ def remove_question(category, question):
     #------------------------
     # Add your code here
     #------------------------
+    index = questions[category][question]
+    questions[category].pop(index)
+    hints[category].pop(index)
     raise NotImplementedError("This function is not implemented yet.")
     #------------------------
 
@@ -107,6 +111,14 @@ def display_question_and_accept_answer(question):
     #------------------------
     # Add your code here
     #------------------------
+    re = game_mechanics.choose_category(questions.keys)
+    question = select_random_question(re)
+    print(question)
+    ans = input("Answer Here: ").lower
+    return ans
+
+
+
     raise NotImplementedError("This function is not implemented yet.")
     #------------------------
 
@@ -126,6 +138,8 @@ def provide_hint(category, question):
     #------------------------
     # Add your code here
     #------------------------
+    ind = questions[category][question].index
+    return hints[category][ind]
     raise NotImplementedError("This function is not implemented yet.")
     #------------------------
 
@@ -144,6 +158,7 @@ def display_correct_answer(correct_answer):
     #------------------------
     # Add your code here
     #------------------------
+    print(correct_answer)
     raise NotImplementedError("This function is not implemented yet.")
     #------------------------
 

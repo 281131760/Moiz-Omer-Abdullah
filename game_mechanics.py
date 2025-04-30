@@ -1,4 +1,4 @@
-
+from question_bank import *
 #---------------------------------------
 #  Game Mechanics
 #    Student A (team lead)
@@ -32,6 +32,12 @@ def choose_category(categories):
     #------------------------
     # Add your code here
     #------------------------
+    for x in question_bank.questions.keys():
+        print(f"x")
+    print("What category do you want?")
+    ans = input()
+    return ans
+    
     raise NotImplementedError("This function is not implemented yet.")
     #------------------------
 

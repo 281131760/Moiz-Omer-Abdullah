@@ -94,9 +94,8 @@ def run_game_rounds(categories):
     #------------------------
     # Add your code here
     #------------------------
-    for i in range(5):
-        cat = choose_category(categories)
-        
+    
+
     raise NotImplementedError("This function is not implemented yet.")
     #------------------------
 

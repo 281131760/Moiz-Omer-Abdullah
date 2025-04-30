@@ -9,6 +9,12 @@ import random
 questions = {
     "Science": [
         ("What is the chemical symbol for water?", "H2O"),
+        ("What gas do humans breathe in?", "Oxygen"),
+        ("What force pulls objects toward Earth?", "Gravity"),
+        ("What organ pumps blood through the body?", "Heart"),
+        ("What is the boiling point of water in Celsius?", "100"),
+        ("What is the center of an atom called?", "Nucleus"),
+        ("What gas do plants absorb?", "Carbon Dioxide")
         # Add more questions as tuples (question, answer)
     ],
 }
@@ -16,6 +22,13 @@ questions = {
 hints = {
     "Science": [
         # Pair each question with a corresponding hint.
+        "It's made of two hydrogen atoms and one oxygen atom.",
+         "We need it to survive. It's 21% of the air.",
+        "It starts with G and keeps the moon in orbit.",
+        "It's a vital muscular organ.",
+        "It's the same as 212°F.",
+        "It's surrounded by electrons.",
+        "It's abbreviated as CO2."
     ],
     # Repeat for other categories as needed.
 }

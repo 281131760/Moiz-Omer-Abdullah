@@ -14,6 +14,7 @@ def welcome_message():
     #------------------------
     # Add your code here
     #------------------------
+    print("Welcome to the game!")
     raise NotImplementedError("This function is not implemented yet.")
     #------------------------
 #---------------------------------------

@@ -17,6 +17,11 @@ def choose_difficulty():
     #------------------------
     # Add your code here
     #------------------------
+    diff = {1: "easy" ,2: "medium" ,3: "hard"}
+    print(diff.values())
+    a = int(input())
+    print(diff[a])
+    
     raise NotImplementedError("This function is not implemented yet.")
     #------------------------
 
@@ -36,6 +41,15 @@ def display_leaderboard(leaderboard):
     #------------------------
     # Add your code here
     #------------------------
+    a = sorted(leaderboard.items())
+    count = len(a)
+    for x in range(len(a)):
+        print(a[count])
+        count -= 1
+
+
+    
+
     raise NotImplementedError("This function is not implemented yet.")
     #------------------------
 

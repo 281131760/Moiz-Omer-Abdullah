@@ -48,6 +48,9 @@ def select_random_question(category):
     #------------------------
     # Add your code here
     #------------------------
+    n = random.randint(0, len(questions[category]) - 1)
+    ques_ans = questions[category][n]
+    return ques_ans 
     raise NotImplementedError("This function is not implemented yet.")
     #------------------------
 
